@@ -28,7 +28,7 @@ namespace bit_manipulation {
  * @param n is the number who will be checked
  * @returns either true or false
  */
-bool isPowerOfTwo(std ::int64_t n) {  // int64_t is preferred over int so that
+bool is_power_of_two(std ::int64_t n) {  // int64_t is preferred over int so that
                                       // no Overflow can be there.
 
     return n > 0 && !(n & n - 1);  // If we subtract a power of 2 numbers by 1
@@ -47,21 +47,21 @@ bool isPowerOfTwo(std ::int64_t n) {  // int64_t is preferred over int so that
  */
 static void test() {
     // n = 4 return true
-    assert(bit_manipulation::isPowerOfTwo(4) == true);
+    assert(bit_manipulation::is_power_of_two(4) == true);
     // n = 6 return false
-    assert(bit_manipulation::isPowerOfTwo(6) == false);
+    assert(bit_manipulation::is_power_of_two(6) == false);
     // n = 13 return false
-    assert(bit_manipulation::isPowerOfTwo(13) == false);
+    assert(bit_manipulation::is_power_of_two(13) == false);
     // n = 64 return true
-    assert(bit_manipulation::isPowerOfTwo(64) == true);
+    assert(bit_manipulation::is_power_of_two(64) == true);
     // n = 15 return false
-    assert(bit_manipulation::isPowerOfTwo(15) == false);
+    assert(bit_manipulation::is_power_of_two(15) == false);
     // n = 32 return true
-    assert(bit_manipulation::isPowerOfTwo(32) == true);
+    assert(bit_manipulation::is_power_of_two(32) == true);
     // n = 97 return false
-    assert(bit_manipulation::isPowerOfTwo(97) == false);
+    assert(bit_manipulation::is_power_of_two(97) == false);
     // n = 1024 return true
-    assert(bit_manipulation::isPowerOfTwo(1024) == true);
+    assert(bit_manipulation::is_power_of_two(1024) == true);
     std::cout << "All test cases successfully passed!" << std::endl;
 }
 /**
